@@ -1,0 +1,16 @@
+<table class="table" style="color:black;">
+    <tr>
+        <td><b>Name</b></td>
+        <td><b>Email</b></td>
+        <td><b>Mobile</b></td>
+        <td><b>Skills</b></td>
+        <td><b>Path</b></td>
+    </tr>
+    {% for value in CV_List %}
+    <tr>
+        {% for item in value %}
+        <td><a href='{{item}}'>{{item}}</a></td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
